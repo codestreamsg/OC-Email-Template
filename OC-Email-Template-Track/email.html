@@ -1,0 +1,418 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- <meta name="format-detection" content="telephone=no"> -->
+    <title>Orchard Credit – Track Application</title>
+    <style>
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%; }
+
+      body {
+        background-color: #f6f6f6;
+        font-family: sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%; }
+
+      table {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 100%; }
+        table td, table .table-email-btn-content td {
+          font-family: sans-serif;
+          font-size: 14px;
+          vertical-align: top; }
+
+      table .table-email-btn-content  {
+        border-collapse: separate;
+        mso-table-lspace: 0pt;
+        mso-table-rspace: 0pt;
+        width: 50%; }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .table-email-body {
+        background-color: #f6f6f6;
+        width: 100%; }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .td-email-container {
+        display: block;
+        Margin: 0 auto !important;
+        /* makes it centered */
+        max-width: 580px;
+        padding: 10px;
+        width: auto !important;
+        width: 580px; }
+
+      /* This should also be a block element, so that it will fill 100% of the .container */
+      .table-email-content {
+        box-sizing: border-box;
+        display: block;
+        Margin: 0 auto;
+        max-width: 580px;
+        padding: 10px; }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .table-email-main {
+        background: #fff;
+        border-radius: 3px;
+        width: 100%;
+        height: 380px; }
+
+      .table-email-wrapper {
+        box-sizing: border-box;
+        margin: 15px; }
+
+      .footer-email {
+        clear: both;
+        padding-top: 20px;
+        text-align: left;
+        width: 100%; }
+        .footer-email td,
+        .footer-email p,
+        .footer-email span,
+        .footer-email a {
+          color: #999999;
+          font-size: 12px;
+          text-align: left;
+          padding-bottom: 5px; }
+
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: sans-serif;
+        font-weight: 400;
+        line-height: 1.4;
+        margin: 0;
+        Margin-bottom: 30px; }
+
+      h1 {
+        font-size: 35px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize; }
+
+      p,
+      ul,
+      ol {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        Margin-bottom: 15px; }
+        p li,
+        ul li,
+        ol li {
+          list-style-position: inside;
+          margin-left: 5px; }
+
+      a {
+        color: #df882c;
+        text-decoration: underline; }
+
+      /* -------------------------------------
+          BUTTONS
+      ------------------------------------- */
+      .btn-c {
+        box-sizing: border-box;
+        width: 100%; }
+        .btn-c > tbody > tr > td {
+          padding-bottom: 15px; }
+        .btn-c .table-email-btn-content {
+          width: 100%; }
+        .btn-c .table-email-btn-content td {
+          background-color: #ffffff;
+          border-radius: 5px;
+          text-align: center; }
+        .btn-c a {
+          background-color: #ffffff;
+          border: solid 1px #df882c;
+          border-radius: 5px;
+          box-sizing: border-box;
+          color: #df882c;
+          cursor: pointer;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          margin: 0;
+          padding: 12px 25px;
+          text-decoration: none;
+          text-transform: capitalize; }
+
+      .btn-CTA .table-email-btn-content td {
+        background-color: #df882c; }
+
+      /*.btn-primary a {
+        background-color: #3498db;
+        border-color: #3498db;
+        color: #ffffff; }*/
+
+      .btn-CTA a {
+        background-color: #df882c;
+        border-color: #df882c;
+        color: #ffffff; }
+
+      /* -------------------------------------
+          OTHER STYLES THAT MIGHT BE USEFUL
+      ------------------------------------- */
+      .last {
+        margin-bottom: 0; }
+
+      .first {
+        margin-top: 0; }
+
+      .align-center {
+        text-align: center; }
+
+      .align-right {
+        text-align: right; }
+
+      .align-left {
+        text-align: left; }
+
+      .clear {
+        clear: both; }
+
+      .mt0 {
+        margin-top: 0; }
+
+      .mb0 {
+        margin-bottom: 0; }
+
+      .pl12 {
+        padding-left: 12px; }
+
+      .pl15 {
+        padding-left: 15px; }
+
+      .preheader {
+        color: transparent;
+        display: none;
+        height: 0;
+        max-height: 0;
+        max-width: 0;
+        opacity: 0;
+        overflow: hidden;
+        mso-hide: all;
+        visibility: hidden;
+        width: 0; }
+
+      .powered-by a {
+        text-decoration: underline; }
+
+      hr {
+        border: 0;
+        border-bottom: 1px solid #f6f6f6;
+        Margin: 20px 0; }
+
+      .dove-grey {
+        color: #767476; }
+
+      .img-icon {
+        padding-right: 5px;
+        width: 10px;
+        height: 10px;
+        margin-top: 5px; }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=table-email-body] p,
+        table[class=table-email-body] ul,
+        table[class=table-email-body] ol,
+        table[class=table-email-body] td,
+        table[class=table-email-body] span,
+        table[class=table-email-body] a {
+          font-size: 13px !important; }
+        table[class=btable-email-body] .mobile-title {
+          font-size: 14px !important;
+          font-weight: bold; }
+        table[class=table-email-body] .table-td-email-wrapper,
+        table[class=table-email-body] .article {
+          padding: 0 !important; }
+        table[class=table-email-body] .table-email-content {
+          padding: 0 !important; }
+        table[class=table-email-body] .td-email-container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=table-email-body] .table-email-main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=table-email-body] .btn-c table {
+          width: 80% !important; }
+        table[class=table-email-body] .btn-c a {
+          width: 80% !important; }
+        table[class=table-email-body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }
+        .acc-details .pl12, .acc-details .pl15 {
+          padding-left: 10px !important;
+          font-size: 10px; }
+        .table-td-email-wrapper br.content-break {
+          display: none !important; }
+        table .table-email-btn .btn-c {
+          margin-left: 0px !important; }
+        .footer-email {
+        text-align: center !important; }
+        .footer-email td,
+        .footer-email p,
+        .footer-email span,
+        .footer-email a {
+          text-align: center !important; }
+        table .table-img-brand {
+          width: 136px !important;
+          height: 16px !important; }
+        .table-email-btn {
+          width: 100% !important;
+          padding-left: 22px !important;
+          padding-right: 22px !important;
+        }
+      }
+
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; }
+        .btn-CTA table td:hover {
+          background-color: #FF9100 !important; }
+        .btn-CTA a:hover {
+          background-color: #FF9100 !important;
+          border-color: #FF9100 !important; }
+      }
+    </style>
+  </head>
+  <body class="">
+    <table border="0" cellpadding="0" cellspacing="0" class="table-email-body">
+      <tr>
+        <td class="td-email-container">
+          <div class="table-email-content">
+
+            <!-- START CENTERED WHITE CONTAINER -->
+            <!-- <span class="preheader"></span> -->
+            <table class="table-email-main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="table-td-email-wrapper">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td align="center" style="border-bottom: #960630 solid 1px;">
+                        <!-- Change to local img src for production -->
+                        <img class="table-img-brand" src="https://d17oy1vhnax1f7.cloudfront.net/items/2I3l3c2m391k042X270G/logo.3B3g2S1m0c1k.png" alt="Orchard Credit" style="margin-bottom: 20px; margin-top:20px;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p class="dove-grey mobile-title" style="margin-top: 44px; font-size: 15px; padding-left: 20px; padding-right: 20px; font-weight: bold; margin-bottom: 25px;">Your application has been successfully submitted</p>
+                        <p class="dove-grey" style="font-size: 13px; line-height: 1.4; margin-bottom: 44px; padding-left: 22px; padding-right: 22px;">
+                          We will get back to you within 2 weeks. To view your application, click on the button below and log in with the following account details.
+                        </p>
+
+                        <table border="0" cellpadding="0" cellspacing="0" class="btn-c btn-CTA table-email-btn" style="margin-bottom: 18px; padding-left: 130px; padding-right:130px;">
+                          <tbody>
+                            <tr>
+                              <td align="center">
+                                <table class="table-email-btn-content" border="0" cellpadding="0" cellspacing="0">
+                                  <tbody>
+                                    <tr>
+                                      <td><a href="#" target="_blank">TRACK APPLICATION</a></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
+                        <p>Good luck! Hope it works.</p> -->
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+
+            <!-- START FOOTER -->
+            <div class="footer-email">
+              <table class="table-email-footer" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <span>&copy; 2016 Orchard Credit. All rights reserved.</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block" style="padding-bottom: 25px;">
+                    <span class="apple-link">897 Old Holland Road,</span> <span class="apple-link">Singapore 278690</span>
+                    <!-- <br> Don't like these emails? <a href="http://i.imgur.com/CScmqnj.gif">Unsubscribe</a>. -->
+                  </td>
+                </tr>
+                <tr>
+                  <td class="content-block powered-by" style="padding-bottom: 25px;">
+                    <!-- Change to local img src for production -->
+                    <span class="apple-link" style="padding-right: 20px;"><a href="http://htmlemail.io"><img class="img-icon" src="https://d17oy1vhnax1f7.cloudfront.net/items/160j0Q1Q3h1N3O1x312b/email.0J3G3d0K2W3d.png" alt="email" />hello@orchardcredit.com</a></span>
+                    <!-- Change to local img src for production -->
+                    <span class="apple-link"><img class="img-icon" src="https://d17oy1vhnax1f7.cloudfront.net/items/1l390M3e2w3t431c1Z07/telephone.3g0B333x3N33.png" alt="telephone">+65 6469 6000</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span>You received this email because you signed up for <a href="#" target="_blank">Orchard Credit</a>.</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!-- END FOOTER -->
+
+<!-- END CENTERED WHITE CONTAINER --></div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
