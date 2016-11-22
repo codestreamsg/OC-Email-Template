@@ -7,115 +7,91 @@
     <title>Orchard Credit – View Application</title>
     <style type="text/css">
       /* -------------------------------------
-                GLOBAL RESETS
-            ------------------------------------- */
-            /* -------------------------------------
-                BODY & CONTAINER
-            ------------------------------------- */
-            /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
-            /* This should also be a block element, so that it will fill 100% of the .container */
-            /* -------------------------------------
-                HEADER, FOOTER, MAIN
-            ------------------------------------- */
-            /* -------------------------------------
-                TYPOGRAPHY
-            ------------------------------------- */
-            /* -------------------------------------
-                BUTTONS
-            ------------------------------------- */
-            /*.btn-primary a {
-              background-color: #3498db;
-              border-color: #3498db;
-              color: #ffffff; }*/
-            /* -------------------------------------
-                OTHER STYLES THAT MIGHT BE USEFUL
-            ------------------------------------- */
-            /* -------------------------------------
-                RESPONSIVE AND MOBILE FRIENDLY STYLES
-            ------------------------------------- */
-            @media only screen and (max-width: 620px) {
-              table[class=body] h1 {
-                font-size: 28px !important;
-                margin-bottom: 10px !important; }
-              table[class=table-email-body] p,
-              table[class=table-email-body] ul,
-              table[class=table-email-body] ol,
-              table[class=table-email-body] td,
-              table[class=table-email-body] span,
-              table[class=table-email-body] a {
-                font-size: 13px !important; }
-              table[class=btable-email-body] .mobile-title {
-                font-size: 14px !important;
-                font-weight: bold; }
-              table[class=table-email-body] .table-td-email-wrapper,
-              table[class=table-email-body] .article {
-                padding: 0 !important; }
-              table[class=table-email-body] .table-email-content {
-                padding: 0 !important; }
-              table[class=table-email-body] .td-email-container {
-                padding: 0 !important;
-                width: 100% !important; }
-              table[class=table-email-body] .table-email-main {
-                border-left-width: 0 !important;
-                border-radius: 0 !important;
-                border-right-width: 0 !important; }
-              table[class=table-email-body] .btn-c table {
-                width: 80% !important; }
-              table[class=table-email-body] .btn-c a {
-                width: 80% !important; }
-              table[class=table-email-body] .img-responsive {
-                height: auto !important;
-                max-width: 100% !important;
-                width: auto !important; }
-              .acc-details .pl12, .acc-details .pl15 {
-                padding-left: 10px !important;
-                font-size: 10px; }
-              .table-td-email-wrapper br.content-break {
-                display: none !important; }
-              table .table-email-btn .btn-c {
-                margin-left: 0px !important; }
-              .footer-email {
-              text-align: center !important; }
-              .footer-email td,
-              .footer-email p,
-              .footer-email span,
-              .footer-email a {
-                text-align: center !important; }
-              table .table-img-brand {
-                width: 136px !important;
-                height: 16px !important; }
-              .table-email-btn {
-                width: 100% !important;
-                padding-left: 22px !important;
-                padding-right: 22px !important;
-              }
-            }
-            /* -------------------------------------
-                PRESERVE THESE STYLES IN THE HEAD
-            ------------------------------------- */
-            @media all {
-              .ExternalClass {
-                width: 100%; }
-              .ExternalClass,
-              .ExternalClass p,
-              .ExternalClass span,
-              .ExternalClass font,
-              .ExternalClass td,
-              .ExternalClass div {
-                line-height: 100%; }
-              .apple-link a {
-                color: inherit !important;
-                font-family: inherit !important;
-                font-size: inherit !important;
-                font-weight: inherit !important;
-                line-height: inherit !important;
-                text-decoration: none !important; }
-              .btn-CTA table td:hover {
-                background-color: #FF9100 !important; }
-              .btn-CTA a:hover {
-                background-color: #FF9100 !important;
-                border-color: #FF9100 !important; }
-            }
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 620px) {
+        table[class=body] h1 {
+          font-size: 28px !important;
+          margin-bottom: 10px !important; }
+        table[class=table-email-body] p,
+        table[class=table-email-body] ul,
+        table[class=table-email-body] ol,
+        table[class=table-email-body] td,
+        table[class=table-email-body] span,
+        table[class=table-email-body] a {
+          font-size: 13px !important; }
+        table[class=btable-email-body] .mobile-title {
+          font-size: 14px !important;
+          font-weight: bold; }
+        table[class=table-email-body] .table-td-email-wrapper,
+        table[class=table-email-body] .article {
+          padding: 0 !important; }
+        table[class=table-email-body] .table-email-content {
+          padding: 0 !important; }
+        table[class=table-email-body] .td-email-container {
+          padding: 0 !important;
+          width: 100% !important; }
+        table[class=table-email-body] .table-email-main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important; }
+        table[class=table-email-body] .btn-c table {
+          width: 80% !important; }
+        table[class=table-email-body] .btn-c a {
+          width: 80% !important; }
+        table[class=table-email-body] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important; }
+        .acc-details .pl12, .acc-details .pl15 {
+          padding-left: 10px !important;
+          font-size: 10px; }
+        .table-td-email-wrapper br.content-break {
+          display: none !important; }
+        table .table-email-btn .btn-c {
+          margin-left: 0px !important; }
+        .footer-email {
+        text-align: center !important; }
+        .footer-email td,
+        .footer-email p,
+        .footer-email span,
+        .footer-email a {
+          text-align: center !important; }
+        table .table-img-brand {
+          width: 136px !important;
+          height: 16px !important; }
+        .table-email-btn {
+          width: 100% !important;
+          padding-left: 22px !important;
+          padding-right: 22px !important;
+        }
+      }
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%; }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%; }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important; }
+        .btn-CTA table td:hover {
+          background-color: #FF9100 !important; }
+        .btn-CTA a:hover {
+          background-color: #FF9100 !important;
+          border-color: #FF9100 !important; }
+      }
     </style>
   </head>
   <body class="" style="background-color:#f6f6f6;font-family:sans-serif;-webkit-font-smoothing:antialiased;font-size:14px;line-height:1.4;margin:0;padding:0;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;">
@@ -125,7 +101,6 @@
           <div class="table-email-content" style="box-sizing:border-box;display:block;Margin:0 auto;max-width:580px;padding:10px;">
             <span class="email-preheader dove-grey" style="color:transparent;display:none;height:0;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;visibility:hidden;width:0;color:#767476;">Welcome to Orchard Credit – View your Application Online</span>
             <!-- START CENTERED WHITE CONTAINER -->
-            <!-- <span class="preheader"></span> -->
             <table class="table-email-main" style="border-collapse:separate;mso-table-lspace:0pt;mso-table-rspace:0pt;background:#fff;border-radius:3px;width:100%;height:380px;">
               <!-- START MAIN CONTENT AREA -->
               <tr>
@@ -161,8 +136,6 @@
                             </tr>
                           </tbody>
                         </table>
-                        <!-- <p>This is a really simple email template. Its sole purpose is to get the recipient to click the button with no distractions.</p>
-                        <p>Good luck! Hope it works.</p> -->
                       </td>
                     </tr>
                   </table>
